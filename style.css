@@ -1,0 +1,74 @@
+/* Global Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Base */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.6;
+    color:#333;
+    background: linear-gradient(135deg, #011675 0%, #ffffff 100%);
+    min-height:100vh;
+}
+
+header{
+    background: linear-gradient(90deg, rgba(46,0,95,0.95), rgba(118,75,162,0.85));
+    color:#fff;
+    padding:2rem;
+    text-align:center;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1{font-size:2.5rem;margin-bottom:.5rem}
+header p{font-size:1.1rem;opacity:.95}
+
+.container{
+    max-width:900px;
+    margin:2rem auto;
+    padding:0 2rem;
+}
+
+section{
+    background:#fff;
+    margin-bottom:2rem;
+    padding:2rem;
+    border-radius:8px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.06);
+}
+
+section h2{
+    color:#667eea;
+    margin-bottom:1.5rem;
+    font-size:1.8rem;
+    border-bottom:2px solid #667eea;
+    padding-bottom:.5rem;
+}
+
+.about-content p{margin-bottom:1rem;line-height:1.8}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem}
+.skill-item{background:#f8f9fa;padding:1rem;border-radius:5px;text-align:center;border-left:4px solid #667eea}
+
+.experience{margin-bottom:1.5rem;padding:1rem;background:#f8f9fa;border-left:4px solid #764ba2;border-radius:5px}
+.experience h3{color:#764ba2;margin-bottom:.5rem}
+.experience p{color:#666;font-size:.95rem}
+
+footer{background:rgba(0,0,0,0.8);color:#fff;text-align:center;padding:2rem;margin-top:3rem}
+
+.contact-links{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
+.contact-links a{color:#667eea;text-decoration:none;transition:color .25s,transform .15s}
+.contact-links a:hover{color:#764ba2;transform:translateY(-2px)}
+
+/* Responsive tweaks */
+@media (max-width:600px){
+    header h1{font-size:2rem}
+    .container{padding:0 1rem}
+    section{padding:1.25rem}
+}
+
+/* Utility classes */
+.text-center{text-align:center}
+.muted{color:#666}
